@@ -1,1 +1,191 @@
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
+}
+
+/* Display, position and padding bottom set up for stick footer  */
+body {
+    display: table;
+    background-color: lightgrey;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    padding-bottom: 10rem;
+    font-size: 1.5rem;
+}
+
+/*Header, logo*/
+header {
+    background-color: white;
+}
+
+.logo-header {
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    max-height: 250px;
+    display: block;
+    margin: auto;   
+}
+
+@media screen and (max-width: 1060px) {
+    .logo-header {
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+
+    }
+}
+
+/* Nav main and footer */
+.main-nav, .navbar-footer {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: royalblue;
+}
+
+.main-nav li, .navbar-footer li {
+    display: inline;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*Link*/
+a {
+    color: white;
+}
+
+a:hover {
+    color: gold;
+}
+
+.active {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+/* footer */
+footer {
+    display: flex;
+    background-color: royalblue;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-height: 200px;
+    padding: 2rem 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-text {
+    font-size: 1.2rem;
+}
+
+/* Main */
+.page-title {
+    background-color: white;
+    color: royalblue;
+    text-align: center;
+    margin-top: -15px;
+    padding: 20px;
+    border: 0.5px solid gold;
+}
+
+h3 {
+    text-align: center;
+    padding: 1%;
+}
+
+.presentation-club, .valeur-club {
+    border: 0.5px solid gold;
+    border-radius: 35px;
+    margin: 1%;
+    background-color: white;
+    margin-top: 20px;
+}
+
+/*  Change width and float img when width screen > 620px 
+    Adjust size img when width > 1840px
+*/
+.img-presentation {  
+    width: 30%; 
+    min-width: 200px;
+    float: left;      
+    padding: 1%;
+}
+
+@media screen and (max-width: 620px) {
+    .img-presentation {
+        width: 100%; 
+        min-width: 250px;
+        padding: 1%;
+    }
+}
+@media screen and (min-width: 1840px) {
+    .img-presentation {
+        width: 23%;
+        min-width: 265px;
+        float: left;
+        padding: 1%;
+    }
+}
+
+.img-valeur {
+    width: 50%; 
+    min-width: 250px;
+    float: right; 
+    padding: 1%;
+}
+
+@media screen and (max-width: 620px) {
+    .img-valeur {
+        width: 100%; 
+        min-width: 265px;
+        float: right; 
+        padding: 1%;
+    }
+}
+
+@media screen and (min-width: 1840px) {
+    .img-valeur {
+        width: 35%;
+        min-width: 265px;
+        float: right;
+        padding: 1%;
+    }
+}
+
+main {
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    max-width: 2000px;
+}
+
+.text-valeur, .text-presentation {
+    padding: 20px;
+}
+
+/* custom cards (event-page) */
+.card {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+}
+
+.card-title {
+    font-size: 2rem;
+}
+
+
+
 
